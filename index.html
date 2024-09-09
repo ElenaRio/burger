@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouMeal</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#20292c">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <img class="header__logo" src="./images/logo.svg" alt="logo_YouMeal">
+            <div class="header__wrapper">
+                <img src="./images/pic.svg" alt="burger_img">
+                <div class="header__title-container">
+                    <h1 class="header__title">Тільки найсмачніші <br>
+                        <span class="header__title-color">бургери!</span>
+                    </h1>
+                    <p class="header__title-delivery">Безкоштовна доставка від <span>599</span> грн</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <button class="navigation__button active" data-tab="#navigation-1"><img src="./images/icon/burger.svg"
+                                alt="Бургери">Бургери</button>
+                    </li>
+                    <li class="navigation__item">
+                        <button class="navigation__button" data-tab="#navigation-2"><img src="./images/icon/zacuskasvg.svg"
+                                alt="Закуски">Закуски</button>
+                    </li>
+                    <li class="navigation__item">
+                        <button class="navigation__button" data-tab="#navigation-3"><img src="./images/icon/hot-dog.svg"
+                                alt="Хот-дог">Хот-дог</button>
+                    </li>
+                    <li class="navigation__item">
+                        <button class="navigation__button" data-tab="#navigation-4"><img src="./images/icon/kombo.svg" alt="Комбо">Комбо</button>
+                    </li>
+                    <li class="navigation__item">
+                        <button class="navigation__button" data-tab="#navigation-5"><img src="./images/icon/shaurma.svg"
+                                alt="Шаурма">Шаурма</button>
+                    </li>
+                    <li class="navigation__item">
+                        <button class="navigation__button" data-tab="#navigation-6"><img src="./images/icon/pizza.svg" alt="Піца">Піца</button>
+                    </li>
+                    <li class="navigation__item">
+                        <button class="navigation__button" data-tab="#navigation-7"><img src="./images/icon/box.svg" alt="Бокс">Бокс</button>
+                    </li>
+                    <li class="navigation__item">
+                        <button class="navigation__button" data-tab="#navigation-8"><img src="./images/icon/desert.svg"
+                                alt="Десерти">Десерти</button>
+                    </li>
+                    <li class="navigation__item">
+                        <button class="navigation__button" data-tab="#navigation-9"><img src="./images/icon/sous.svg" alt="Соуси">Соуси</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="catalog">
+            <div class="container catalog__container">
+                <div class="catalog__order order ">
+                    
+                    <div class="order--wrapper">
+                        <div class="order--wrapper__title">
+                            <h3 class="order__title">Кошик</h3>
+                            <span class="order__count">0</span>
+                        </div>
+                        <div class="alert"> Тут поки що порожньо</div>
+                        <div class="order--wrapper__list">
+                            
+                            <ul class="order__list  ">
+
+
+
+                            </ul>
+                            <div class="checkout-wrapper none" id="checkout">
+                                <div class="order__total">
+                                    <p>Разом</p>
+                                    <p>
+                                        <span class="order__total-amount">0</span>
+                                        <span class="currency">грн</span>
+                                    </p>
+                                </div>
+
+                                <button class="btn order__btn" id="modal-form">Оформити замовлення</button>
+
+                                <div class="order__wrap-areal">
+                                    <div class="wrapper-order__apeal">
+                                        <img src="./images/icon/moto-dostavka.svg" alt="dostavka">
+                                        <p class="order__apeal">Доставка 100 грн</p>
+                                    </div>
+                                    <button class="order__close" id="close-basket">Згорнути</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="catalog--wrapper active" id="navigation-1">
+                    <h3 class="catalog__title">Бургери</h3>
+                    <div class="catalog--wrapper__list">
+                        <ul class="catalog__list" id="product-burger">
+
+
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="catalog--wrapper" id="navigation-2">
+                    <h3 class="catalog__title">Закуски</h3>
+                    <div class="catalog--wrapper__list">
+                        <ul class="catalog__list" id="product-snack">
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="catalog--wrapper" id="navigation-3">
+                    <h3 class="catalog__title">Хот-дог</h3>
+                    <div class="catalog--wrapper__list">
+                        <ul class="catalog__list" id="product-hotdog">
+
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="catalog--wrapper " id="navigation-4">
+                    <h3 class="catalog__title">Комбо</h3>
+                    <div class="catalog--wrapper__list">
+                        <ul class="catalog__list" id="product-combo">
+
+            
+
+                        </ul>
+                    </div>
+                </div>
+
+               
+                <div class="catalog--wrapper " id="navigation-5">
+                    <h3 class="catalog__title">Шаурма</h3>
+                    <div class="catalog--wrapper__list">
+                        <ul class="catalog__list" id="product-shaverma">
+            
+
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="catalog--wrapper " id="navigation-6">
+                    <h3 class="catalog__title">Піцца</h3>
+                    <div class="catalog--wrapper__list">
+                        <ul class="catalog__list" id="product-pizza">
+                            
+
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="catalog--wrapper " id="navigation-7">
+                    <h3 class="catalog__title">Бокс</h3>
+                    <div class="catalog--wrapper__list">
+                        <ul class="catalog__list" id="product-box">
+            
+
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="catalog--wrapper " id="navigation-8">
+                    <h3 class="catalog__title">Десерти</h3>
+                    <div class="catalog--wrapper__list">
+                        <ul class="catalog__list" id="product-decert">
+
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="catalog--wrapper " id="navigation-9">
+                    <h3 class="catalog__title">Соуси</h3>
+                    <div class="catalog--wrapper__list">
+                        <ul class="catalog__list" id="product-sous">
+
+            
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="footer__logo">
+                    <img src="./images/logo-footer.svg" alt="footer__logo">
+                </div>
+
+                <div class="footer__contacts">
+                    <h3 class="footer__title">Номер для замовлення</h3>
+                    <a class="footer__phone" href="tel:+380989864644">
+                        <img src="./images/icon/Call.svg" alt="call">+38 (098) 986-46-44</a>
+                </div>
+                <div class="footer__social">
+                    <h3 class="footer__title">Ми у соцмережах</h3>
+                    <div class="footer__social-icon">
+                        <a href="#!"><img src="./images/icon/bi_telegram.svg" alt="img"></a>
+                        <a href="#!"><img src="./images/icon/instagram.jpg" alt="img"></a>
+                    </div>
+                </div>
+
+            </div>
+            <p class="footer__copy">© YouMeal, 2024</p>
+        </div>
+    </footer>
+
+    
+    <div class="modal modal_product " id="tab-1">
+        <div class="modal__main modal__main-product">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal-product__container ">
+                <h2 class="modal-product__title">М'ясна бомба</h2>
+                <div class="modal-product__content">
+                    <img class="modal-product__img" src="./images/burger/burger 1.jpg" alt="photo">
+                    <div class="modal-product__description">
+                        <p class="modal-product__details">Супер м'ясна насолода! Велика рубана котлета зі свіжого
+                            яловичого м'яса підкорить вас своєю соковитістю, а хрумке листя салату додасть свіжості.</p>
+                        <ul class="modal-product__ingredients">
+                            <li class="modal-product__ingredients_title">Склад:</li>
+                            <li class="ingredients">Пшенична булочка</li>
+                            <li class="ingredients">Котлета з яловичини</li>
+                            <li class="ingredients">Червона цибуля</li>
+                            <li class="ingredients">Листя салату</li>
+                            <li class="ingredients">Соус горчичный</li>
+                            <li class="ingredients-weight">520г, ккал 430</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_product " id="tab-2">
+        <div class="modal__main modal__main-product">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal-product__container ">
+                <h2 class="modal-product__title">Супер сирний</h2>
+                <div class="modal-product__content">
+                    <img class="modal-product__img" src="./images/burger/burger 2.jpg" alt="photo">
+                    <div class="modal-product__description">
+                        <p class="modal-product__details">Супер сирна насолода! Велика рубана котлета зі свіжого
+                            яловичого м'яса та велика кількість сиру підкорить вас своєю соковитістю, а хрумке листя
+                            салату додасть свіжості.</p>
+                        <ul class="modal-product__ingredients">
+                            <li class="modal-product__ingredients_title">Склад:</li>
+                            <li class="ingredients">Пшенична булочка</li>
+                            <li class="ingredients">Котлета з яловичини</li>
+                            <li class="ingredients">Сир</li>
+                            <li class="ingredients">Солоні огірки</li>
+                            <li class="ingredients">Листя салату</li>
+                            <li class="ingredients">Соус горчичный</li>
+                            <li class="ingredients-weight">512г, ккал 430</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_product " id="tab-3">
+        <div class="modal__main modal__main-product">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal-product__container ">
+                <h2 class="modal-product__title">Ситний</h2>
+                <div class="modal-product__content">
+                    <img class="modal-product__img" src="./images/burger/burger 3.jpg" alt="photo">
+                    <div class="modal-product__description">
+                        <p class="modal-product__details">Ситний бургер, додасть вам енергії! Дві велика рубані котлети
+                            зі свіжого
+                            курячого м'яса підкорить вас своєю соковитістю, а хрумкі огірочки підкреслять неперевершений
+                            смак.</p>
+                        <ul class="modal-product__ingredients">
+                            <li class="modal-product__ingredients_title">Склад:</li>
+                            <li class="ingredients">Пшенична булочка</li>
+                            <li class="ingredients">Котлета з куриці</li>
+                            <li class="ingredients">Солоні огірки</li>
+                            <li class="ingredients">Сир</li>
+                            <li class="ingredients">Соус сметанний</li>
+                            <li class="ingredients-weight">580г, ккал 530</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_product " id="tab-4">
+        <div class="modal__main modal__main-product">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal-product__container ">
+                <h2 class="modal-product__title">Тяжкий удар</h2>
+                <div class="modal-product__content">
+                    <img class="modal-product__img" src="./images/burger/burger 4.jpg" alt="photo">
+                    <div class="modal-product__description">
+                        <p class="modal-product__details">Неймовірна насолода! Велика рубана котлета зі свіжого
+                            м'яса свинини підкорить вас своєю соковитістю, а хрумке листя салату додасть свіжості.</p>
+                        <ul class="modal-product__ingredients">
+                            <li class="modal-product__ingredients_title">Склад:</li>
+                            <li class="ingredients">Пшенична булочка</li>
+                            <li class="ingredients">Котлета з свинини</li>
+                            <li class="ingredients">Червона цибуля</li>
+                            <li class="ingredients">Листя салату</li>
+                            <li class="ingredients">Соус вершковий</li>
+                            <li class="ingredients-weight">470г, ккал 400</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_product " id="tab-5">
+        <div class="modal__main modal__main-product">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal-product__container ">
+                <h2 class="modal-product__title">Класичний</h2>
+                <div class="modal-product__content">
+                    <img class="modal-product__img" src="./images/burger/burger 5.jpg" alt="photo">
+                    <div class="modal-product__description">
+                        <p class="modal-product__details">неперевершений смак, перевірений часом! Велика рубана котлета
+                            зі свіжого
+                            курячого м'яса підкорить вас своєю соковитістю, сир та помідор додасть вишуканості.</p>
+                        <ul class="modal-product__ingredients">
+                            <li class="modal-product__ingredients_title">Склад:</li>
+                            <li class="ingredients">Пшенична булочка</li>
+                            <li class="ingredients">Котлета з куриці</li>
+                            <li class="ingredients">Сир</li>
+                            <li class="ingredients">Помідор</li>
+                            <li class="ingredients">Листя салату</li>
+                            <li class="ingredients">Соус вершковий</li>
+                            <li class="ingredients-weight">450г, ккал 410</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_product " id="tab-6">
+        <div class="modal__main modal__main-product">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal-product__container ">
+                <h2 class="modal-product__title">Італьянський</h2>
+                <div class="modal-product__content">
+                    <img class="modal-product__img" src="./images/burger/burger 6.jpg" alt="photo">
+                    <div class="modal-product__description">
+                        <p class="modal-product__details">Цей смак та аромат нагадає вам літню відпустку! Велика рубана
+                            котлета зі свіжого
+                            яловичого м'яса підкорить вас своєю соковитістю, а листя базиліку додасть свіжості.</p>
+                        <ul class="modal-product__ingredients">
+                            <li class="modal-product__ingredients_title">Склад:</li>
+                            <li class="ingredients">Пшенична булочка</li>
+                            <li class="ingredients">Котлета з яловичини</li>
+                            <li class="ingredients">Червона цибуля</li>
+                            <li class="ingredients">Листя базиліку</li>
+                            <li class="ingredients">Соус вершковий</li>
+                            <li class="ingredients-weight">510г, ккал 430</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="modal modal_product " id="snak-1">
+        <div class="modal__main modal__main-product">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal-product__container ">
+                <h2 class="modal-product__title">Начос</h2>
+                <div class="modal-product__content">
+                    <img class="modal-product__img" src="./images/zakuska/snack 1.jpg" alt="photo">
+                    <div class="modal-product__description">
+                        <p class="modal-product__details">Однією із традиційних страв мексиканської кухні є начос —
+                            чіпси із тортильї трикутної форми з додаванням сиру.</p>
+                        <ul class="modal-product__ingredients">
+                            <li class="modal-product__ingredients_title">Склад:</li>
+                            <li class="ingredients">Борошно кукурудзяне</li>
+                            <li class="ingredients">Олія </li>
+                            <li class="ingredients">Сушена паприка</li>
+                            <li class="ingredients">Борошно рисове</li>
+                            <li class="ingredients">Сир Чеддер</li>
+                            <li class="ingredients-weight">220г, ккал 230</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_product " id="snak-2">
+        <div class="modal__main modal__main-product">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal-product__container ">
+                <h2 class="modal-product__title">Картопля фрі</h2>
+                <div class="modal-product__content">
+                    <img class="modal-product__img" src="./images/zakuska/snack 2.jpg" alt="photo">
+                    <div class="modal-product__description">
+                        <p class="modal-product__details">Смачну і хрустку картоплю фрі багато хто просто обожнює.
+
+                            Шматочки картоплі, обсмажені до скоринки у фритюрі та щедро приправлені сіллю – страва не
+                            найкорисніша для фігури, але дуже апетитна.</p>
+                        <ul class="modal-product__ingredients">
+                            <li class="modal-product__ingredients_title">Склад:</li>
+                            <li class="ingredients">Картопля</li>
+                            <li class="ingredients">Олія </li>
+                            <li class="ingredients">Сіль</li>
+                            <li class="ingredients">Спеції</li>
+                            <li class="ingredients"></li>
+                            <li class="ingredients-weight">180г, ккал 330</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_product " id="snak-3">
+        <div class="modal__main modal__main-product">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal-product__container ">
+                <h2 class="modal-product__title">Цибулеві кільця</h2>
+                <div class="modal-product__content">
+                    <img class="modal-product__img" src="./images/zakuska/snack 3.jpg" alt="photo">
+                    <div class="modal-product__description">
+                        <p class="modal-product__details">Цибулеві кільця з сиром в клярі - неймовірно апетитна і
+                            фантастично смачна страва для перекусу. У рецепті розповідається, як зробити кращі кільця
+                            цибулі: в хрусткій паніровці з хлібних крихт з паприкою і з тягучою начинкою з розплавленого
+                            твердого сиру.</p>
+                        <ul class="modal-product__ingredients">
+                            <li class="modal-product__ingredients_title">Склад:</li>
+                            <li class="ingredients">Цибуля</li>
+                            <li class="ingredients">Олія </li>
+                            <li class="ingredients">Сир</li>
+                            <li class="ingredients">Спеції</li>
+                            <li class="ingredients">Яйце</li>
+                            <li class="ingredients">Борошно</li>
+                            <li class="ingredients-weight">160г, ккал 380</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+    <div class="modal modal_product " id="hotdog-1">
+        <div class="modal__main modal__main-product">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal-product__container ">
+                <h2 class="modal-product__title">Хот-дог ситний</h2>
+                <div class="modal-product__content">
+                    <img class="modal-product__img" src="./images/hot-dog/photo 1.jpg" alt="photo">
+                    <div class="modal-product__description">
+                        <p class="modal-product__details">Хто не любить хот-дог, той… просто його не пробував. Цей
+                            бутерброд подобається гурманам з усього світу, не дарма він і здобув таку приголомшливу
+                            славу. Де б ви не були, в якому місті чи навіть країні, гарячу сосиску у булці можна
+                            придбати скрізь!</p>
+                        <ul class="modal-product__ingredients">
+                            <li class="modal-product__ingredients_title">Склад:</li>
+                            <li class="ingredients">Пшенична булочка</li>
+                            <li class="ingredients">Куряча сосиска </li>
+                            <li class="ingredients">Бекон</li>
+                            <li class="ingredients">Майонез, кетчуп</li>
+                            <li class="ingredients">Сир та зелень, помідор, огірок</li>
+                            <li class="ingredients-weight">420г, ккал 430</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_product " id="hotdog-2">
+        <div class="modal__main modal__main-product">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal-product__container ">
+                <h2 class="modal-product__title">Хот-дог гострий</h2>
+                <div class="modal-product__content">
+                    <img class="modal-product__img" src="./images/hot-dog/photo 2.jpg" alt="photo">
+                    <div class="modal-product__description">
+                        <p class="modal-product__details">Хто не любить хот-дог, той… просто його не пробував. Цей
+                            бутерброд подобається гурманам з усього світу, не дарма він і здобув таку приголомшливу
+                            славу. Де б ви не були, в якому місті чи навіть країні, гарячу сосиску у булці можна
+                            придбати скрізь!</p>
+                        <ul class="modal-product__ingredients">
+                            <li class="modal-product__ingredients_title">Склад:</li>
+                            <li class="ingredients">Пшенична булочка</li>
+                            <li class="ingredients">Копчена сосиска </li>
+                            <li class="ingredients">Гострий перець</li>
+                            <li class="ingredients">Майонез, кетчуп, гірчиця</li>
+                            <li class="ingredients">Сир, корейська морква, помідор, огірок</li>
+                            <li class="ingredients-weight">420г, ккал 430</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_product " id="hotdog-3">
+        <div class="modal__main modal__main-product">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal-product__container ">
+                <h2 class="modal-product__title">Хот-дог класичний</h2>
+                <div class="modal-product__content">
+                    <img class="modal-product__img" src="./images/hot-dog/photo 3.jpg" alt="photo">
+                    <div class="modal-product__description">
+                        <p class="modal-product__details">Хто не любить хот-дог, той… просто його не пробував. Цей
+                            бутерброд подобається гурманам з усього світу, не дарма він і здобув таку приголомшливу
+                            славу. Де б ви не були, в якому місті чи навіть країні, гарячу сосиску у булці можна
+                            придбати скрізь!</p>
+                        <ul class="modal-product__ingredients">
+                            <li class="modal-product__ingredients_title">Склад:</li>
+                            <li class="ingredients">Пшенична булочка</li>
+                            <li class="ingredients">Копчена сосиска </li>
+                            <li class="ingredients">Кукурудза</li>
+                            <li class="ingredients">Майонез, кетчуп, гірчиця</li>
+                            <li class="ingredients">Сир, корейська морква</li>
+                            <li class="ingredients-weight">440г, ккал 440</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  
+    <div class="modal modal_product " id="combo-1">
+        <div class="modal__main modal__main-product">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal-product__container ">
+                <h2 class="modal-product__title">Комбо</h2>
+                <div class="modal-product__content">
+                    <img class="modal-product__img" src="./images/combo/combo1.jpg" alt="photo">
+                    <div class="modal-product__description">
+                        <p class="modal-product__details">Наша вигідна пропозиція комбо-меню – це ідеальне поєднання якісної їжі та вигідної ціни. </p>
+                        <ul class="modal-product__ingredients">
+                            <li class="modal-product__ingredients_title">Склад:</li>
+                            <li class="ingredients">Бургер класичний</li>
+                            <li class="ingredients">Картопля фрі </li>
+                            <li class="ingredients">Цибулеві кільця</li>
+                            <li class="ingredients">Майонез, кетчуп</li>
+                
+                            <li class="ingredients-weight">420г, ккал 430</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal modal_product-form" id="order-form">
+        <div class="modal__form ">
+            <button class="modal-btn__close">
+                <img src="./images/icon/close.svg" alt="close">
+            </button>
+            <div class="modal__container ">
+
+                <div class="modal-form__img">
+                    <img class="form__img" src="./images/ponchik.svg" alt="photo">
+                </div>
+
+                <div class="modal-form__info">
+                    <h2 class="modal-form__title">Доставка</h2>
+                    <div class="modal-wrapper">
+                        <form class="modal-form" id="delivery">
+                            <fieldset class="modal-form__fieldset ">
+                                <input class="modal-form__input" type="text" name="name" placeholder="Ваше ім'я" required>
+                                <input class="modal-form__input" type="tel" name="phone" placeholder="Телефон" required>
+                            </fieldset>
+
+                            <fieldset class="modal-form__fieldset modal-form__fieldset_radio">
+                                <label class="modal-form__label">
+                                    <input class="modal-form__radio" type="radio" name="format-dostavku" value="pickup"
+                                        checked>
+                                    <span class="span-form">Самовивіз</span>
+                                </label>
+                                <label class="modal-form__label">
+                                    <input class="modal-form__radio" type="radio" name="format-dostavku"
+                                        value="delivery">
+                                    <span class="span-form">Доставка</span>
+                                </label>
+                            </fieldset>
+
+                            <fieldset class="modal-form__fieldset  modal-form__fieldset_hiden" id="address-fields">
+                           
+                                <input class="modal-form__input modal-form__input_margin" type="text" name="address"
+                                    placeholder="Вулиця, дім, квартира">
+                                <input class="modal-form__input modal-form__input_half" type="tel" name="number"
+                                    placeholder="Поверх">
+                                <input class="modal-form__input modal-form__input_half" type="tel" name="intercom"
+                                    placeholder="Домофон">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <button class="modal-form__btn" type="submit" form="delivery">Оформити</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="card.js"></script>
+    <script src="script.js" defer></script>
+    <script src="validForm.js"></script>
+
+
+</body>
+
+</html>

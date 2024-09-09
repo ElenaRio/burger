@@ -1,0 +1,240 @@
+{ "burger":[
+    {
+        "id": "burger-01",
+        "imgSrc": "./images/burger/burger 1.jpg",
+        "title": "М'ясна бомба",
+        "prise": 300, 
+        "data_tab": "#tab-1",
+        "weight": 520
+    },
+    {
+        "id": "burger-02",
+        "imgSrc": "./images/burger/burger 2.jpg",
+        "title": "Супер сирний",
+        "prise": 350, 
+        "data_tab": "#tab-2",
+        "weight": 512
+    },
+    {
+        "id": "burger-03",
+        "imgSrc": "./images/burger/burger 3.jpg",
+        "title": "Ситний",
+        "prise": 340, 
+        "data_tab": "#tab-3",
+        "weight": 580
+    },
+    {
+        "id": "burger-04",
+        "imgSrc": "./images/burger/burger 4.jpg",
+        "title": "Тяжкий удар",
+        "prise": 380, 
+        "data_tab": "#tab-4",
+        "weight": 470
+    },
+    {
+        "id": "burger-05",
+        "imgSrc": "./images/burger/burger 5.jpg",
+        "title": "Класичний",
+        "prise": 250, 
+        "data_tab": "#tab-5",
+        "weight": 450
+    },
+    {
+        "id": "burger-06",
+        "imgSrc": "./images/burger/burger 6.jpg",
+        "title": "Італьянський",
+        "prise": 280, 
+        "data_tab": "#tab-6",
+        "weight": 510
+    }
+
+],
+"snack":[
+    {
+        "id": "snack-01",
+        "imgSrc": "./images/zakuska/snack 1.jpg",
+        "title": "Начос",
+        "prise": 100, 
+        "data_tab": "#snak-1",
+        "weight": 220
+    },
+    {
+        "id": "snack-02",
+        "imgSrc": "./images/zakuska/snack 2.jpg",
+        "title": "Картопля фрі",
+        "prise": 50, 
+        "data_tab": "#snak-2",
+        "weight": 180
+    },
+    {
+        "id": "snack-03",
+        "imgSrc": "./images/zakuska/snack 3.jpg",
+        "title": "Цибулеві кільця",
+        "prise": 50, 
+        "data_tab": "#snak-3",
+        "weight": 160
+    }
+],
+"hotdog":[
+    {
+        "id": "hotdog-01",
+        "imgSrc": "./images/hot-dog/photo 1.jpg",
+        "title": "Хот-дог ситний",
+        "prise": 150, 
+        "data_tab": "#hotdog-1",
+        "weight": 420
+    },
+    {
+        "id": "hotdog-02",
+        "imgSrc": "./images/hot-dog/photo 2.jpg",
+        "title": "Хот-дог гострий",
+        "prise": 110, 
+        "data_tab": "#hotdog-2",
+        "weight": 420
+    },
+    {
+        "id": "hotdog-03",
+        "imgSrc": "./images/hot-dog/photo 3.jpg",
+        "title": "Хот-дог класичний",
+        "prise": 100, 
+        "data_tab": "#hotdog-3",
+        "weight": 440
+    }
+
+],
+"combo":[
+    {
+        "id": "combo-01",
+        "imgSrc": "./images/combo/combo1.jpg",
+        "title": "Комбо",
+        "prise": 400, 
+        "data_tab": "#combo-1",
+        "weight": 620
+    }
+],
+"shaverma":[
+    {
+        "id": "shaverma-01",
+        "imgSrc": "./images/shaverma/photo.jpg",
+        "title": "Шаурма",
+        "prise": 200, 
+        "data_tab": "#shaverma-1",
+        "weight": 420
+    }
+    
+],
+"pizza":[
+    {
+        "id": "pizza-01",
+        "imgSrc": "./images/pizza/pizza 1.jpg",
+        "title": "Піцца маргарита",
+        "prise": 150, 
+        "data_tab": "#pizza-1",
+        "weight": 320
+    },
+    {
+        "id": "pizza-02",
+        "imgSrc": "./images/pizza/pizza 2.jpg",
+        "title": "Піцца курка з ананасом",
+        "prise": 150, 
+        "data_tab": "#pizza-2",
+        "weight": 320
+    },
+    {
+        "id": "pizza-03",
+        "imgSrc": "./images/pizza/pizza 3.jpg",
+        "title": "Піцца курка з грибами",
+        "prise": 150, 
+        "data_tab": "#pizza-3",
+        "weight": 320
+    },
+    {
+        "id": "pizza-04",
+        "imgSrc": "./images/pizza/pizza 4.jpg",
+        "title": "Піцца салямі",
+        "prise": 150,
+        "data_tab": "#pizza-4", 
+        "weight": 320
+    },
+    {
+        "id": "pizza-05",
+        "imgSrc": "./images/pizza/pizza 5.jpg",
+        "title": "Піцца чотири м'яса",
+        "prise": 150, 
+        "data_tab": "#pizza-5",
+        "weight": 320
+    }
+],
+"box":[
+    {
+        "id": "box-01",
+        "imgSrc": "./images/box/box 1.jpg",
+        "title": "Бокс",
+        "prise": 600, 
+        "data_tab": "#box-1",
+        "weight": 620
+    }
+],
+"decert":[
+    {
+        "id": "decer-01",
+        "imgSrc": "./images/desert/decert 1.jpg",
+        "title": "Заварні тістечка",
+        "prise": 30, 
+        "data_tab": "#desert-1",
+        "weight": 50
+    },
+    {
+        "id": "decer-02",
+        "imgSrc": "./images/desert/decert 2.jpg",
+        "title": "Суфле з полуниці",
+        "prise": 120,
+        "data_tab": "#desert-2", 
+        "weight": 220
+    },
+    {
+        "id": "decer-03",
+        "imgSrc": "./images/desert/decert 3.jpg",
+        "title": "Шоколадне брауні морзиво",
+        "prise": 140, 
+        "data_tab": "#desert-3",
+        "weight": 220
+    },
+    {
+        "id": "decer-04",
+        "imgSrc": "./images/desert/decert 4.jpg",
+        "title": "Торт наполеон",
+        "prise": 50, 
+        "data_tab": "#desert-4",
+        "weight": 220
+    },
+    {
+        "id": "decer-05",
+        "imgSrc": "./images/desert/decert 5.jpg",
+        "title": "Мафін з полуницею",
+        "prise": 20,
+        "data_tab": "#desert-5", 
+        "weight": 50
+    }
+],
+"sous":[
+    {
+        "id": "sous-01",
+        "imgSrc": "./images/sous/sous 1.jpg",
+        "title": "Томатний",
+        "prise": 20, 
+        "data_tab": "#sous-1",
+        "weight": 100
+    },
+    {
+        "id": "sous-02",
+        "imgSrc": "./images/sous/sous 2.jpg",
+        "title": "Вершковий",
+        "prise": 20, 
+        "data_tab": "#sous-2",
+        "weight": 100
+    }
+]
+
+ }
+
